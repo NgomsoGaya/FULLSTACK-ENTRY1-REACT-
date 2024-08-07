@@ -1,0 +1,149 @@
+/* src/pages/Home.css */
+.home {
+  padding: 20px;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 70px;
+  padding: 130px 0px 0px 0px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../assets/images/men3.webp');
+  background-size: cover; /* Ensures the image covers the entire banner area */
+  background-position: center; /* Centers the image in the banner */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: #fff; /* Ensures text is visible over the background image */
+  text-align: center;
+  min-height: 500px; 
+  padding: 0px;
+}
+
+.categories {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding for spacing */
+  position: sticky; /* Makes the categories sticky */
+  top: 0; /* Sticks to the top */
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.category-grid {
+  display: flex;
+  justify-content: space-between; /* Evenly space out the categories */
+  align-items: center; /* Center the categories vertically */
+}
+
+.category {
+  font-size: 1rem; /* Adjust font size as needed */
+  text-transform: uppercase; /* Uppercase text */
+  padding: 10px 20px; /* Padding around each category */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.category:hover {
+  color: #ccc; /* Change color on hover */
+}
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover; /* Ensures the image covers the entire section area */
+  background-position: center; /* Centers the image in the section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: #fff; /* Ensures text is visible over the background image */
+  text-align: center;
+  min-height: 300px; 
+  padding: 50px 0;
+}
+
+.category-section h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.category-section.woman {
+  background-image: url('../assets/images/men3.webp');
+}
+
+.category-section.man {
+  background-image: url('../assets/images/men3.webp');
+}
+
+.category-section.kids {
+  background-image: url('../assets/images/men3.webp');
+}
+
+.category-section.shoes {
+  background-image: url('../assets/images/men3.webp');
+}
+
+.category-section.bags {
+  background-image: url('../assets/images/men3.webp');
+}
+
+.category-section.beauty {
+  background-image: url('../assets/images/men3.webp');
+}
+
+.categories,
+.featured-products,
+.promotions {
+  margin: 40px 0;
+}
+
+.category-grid,
+.product-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.category-grid {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.product-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.category,
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.promotions .promotion-banner {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 20px;
+  }
+
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

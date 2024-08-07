@@ -1,0 +1,17 @@
+/* src/pages/Category.css */
+.category-page {
+    padding: 20px;
+  }
+  
+  .category-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
