@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header'
+import Categories from './components/Categories';
 import Home from './pages/Home';
 import WomanCategory from './pages/WomanCategory';
 import ManCategory from './pages/ManCategory';
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <Router>
       <Header />
+      <Categories />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/woman" element={<WomanCategory />} />

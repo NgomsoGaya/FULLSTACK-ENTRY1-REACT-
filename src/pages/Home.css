@@ -25,15 +25,6 @@
   padding: 0px;
 }
 
-.categories {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  padding: 10px 20px; /* Padding for spacing */
-  position: sticky; /* Makes the categories sticky */
-  top: 0; /* Sticks to the top */
-  z-index: 1000; /* Ensures it stays on top of other elements */
-}
-
 .category-grid {
   display: flex;
   justify-content: space-between; /* Evenly space out the categories */
@@ -94,7 +85,6 @@
   background-image: url('../assets/images/men3.webp');
 }
 
-.categories,
 .featured-products,
 .promotions {
   margin: 40px 0;

@@ -1,0 +1,26 @@
+.categories {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 3.2rem; /*Adjust based on the actual height of your header */
+    z-index: 999;
+  }
+  
+  .category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .category {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  .category:hover {
+    color: #000;
+  }
+  

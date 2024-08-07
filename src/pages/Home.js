@@ -9,16 +9,6 @@ const Home = () => {
         <h1 className="lobster-regular">Welcome to MyEcommerce</h1>
         <p>Shop the best products at the best prices</p>
       </section>
-      <section className="categories">
-        <div className="category-grid">
-          <Link to="/category/woman" className="category">WOMAN</Link>
-          <Link to="/category/man" className="category">MAN</Link>
-          <Link to="/category/kids" className="category">KIDS</Link>
-          <Link to="/category/shoes" className="category">SHOES</Link>
-          <Link to="/category/bags" className="category">BAGS</Link>
-          <Link to="/category/beauty" className="category">BEAUTY</Link>
-        </div>
-      </section>
       <section className="banner">
       <Link to="/category/woman" className="category">WOMAN</Link>
       </section>
