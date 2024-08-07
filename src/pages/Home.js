@@ -1,15 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import ProductCard from '../components/ProductCard';
-import product1Image from '../assets/images/loaferMen.jpg';
 
-const products = [
-  { name: 'Product 1', price: 29.99, image: product1Image },
-  { name: 'Product 2', price: 19.99, image: 'path/to/image2.jpg' },
-  { name: 'Product 3', price: 39.99, image: 'path/to/image3.jpg' },
-  { name: 'Product 4', price: 49.99, image: 'path/to/image4.jpg' },
-];
+
 
 const Home = () => {
   return (
@@ -28,13 +21,23 @@ const Home = () => {
           <Link to="/category/beauty" className="category">BEAUTY</Link>
         </div>
       </section>
-      <section className="featured-products">
-        <h2>Featured Products</h2>
-        <div className="product-grid">
-          {products.map((product, index) => (
-            <ProductCard key={index} product={product} />
-          ))}
-        </div>
+      <section className="banner">
+      <Link to="/category/woman" className="category">WOMAN</Link>
+      </section>
+      <section className="banner">
+      <Link to="/category/man" className="category">MAN</Link>
+      </section>
+      <section className="banner">
+      <Link to="/category/kids" className="category">KIDS</Link>
+      </section>
+      <section className="banner">
+      <Link to="/category/shoes" className="category">SHOES</Link>
+      </section>
+      <section className="banner">
+      <Link to="/category/bags" className="category">BAGS</Link>
+      </section>
+      <section className="banner">
+      <Link to="/category/beauty" className="category">BEAUTY</Link>
       </section>
       <section className="promotions">
         <h2>Promotions</h2>
