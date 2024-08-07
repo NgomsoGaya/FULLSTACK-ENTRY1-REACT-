@@ -13,10 +13,16 @@ const Header = () => {
       <div className="logo">SolefulSupply</div>
       <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/shop">Shop</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li>
+            <input 
+              type="text" 
+              placeholder="Search..." 
+              className="search-bar"
+            />
+          </li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/wishlist">Wishlist</a></li>
+          <li><a href="/cart">Cart</a></li>
         </ul>
       </nav>
       <div className="hamburger" onClick={handleMobileMenuToggle}>

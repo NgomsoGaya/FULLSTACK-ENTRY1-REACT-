@@ -1,74 +1,80 @@
-/* src/components/Header.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .logo {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav li {
-    margin-left: 1.5rem;
-  }
-  
-  .nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.search-bar {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .nav {
     display: none;
     flex-direction: column;
-    cursor: pointer;
+    width: 100%;
   }
-  
-  .hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
+
+  .nav.open {
+    display: flex;
   }
-  
-  @media (max-width: 768px) {
-    .nav {
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav.open {
-      display: flex;
-    }
-  
-    .nav ul {
-      flex-direction: column;
-    }
-  
-    .nav li {
-      margin: 1rem 0;
-    }
-  
-    .hamburger {
-      display: flex;
-    }
+
+  .hamburger {
+    display: flex;
   }
-  
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
