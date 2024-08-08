@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
           </li>
           <li><a href="/login">Login</a></li>
           <li><a href="/wishlist">Wishlist</a></li>
-          <li><a href="/cart">Cart</a></li>
+          <li><Link to="/cart">Cart</Link></li>
         </ul>
       </nav>
       <div className="hamburger" onClick={handleMobileMenuToggle}>

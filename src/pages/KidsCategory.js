@@ -4,7 +4,7 @@ import product1Image from '../assets/images/men3.webp';
 import './Category.css';
 
 const products = [
-  { name: 'Woman Product 1', price: 29.99, image: product1Image },
+  { name: 'Kids Product 1', price: 29.99, image: product1Image },
 ];
 
 const WomanCategory = () => {
