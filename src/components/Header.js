@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">SolefulSupply</div>
+      <div className="logo"><Link to="/">SolefulSupply</Link></div>
       <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul>
           <li>
@@ -22,7 +22,7 @@ const Header = () => {
             />
           </li>
           <li><a href="/login">Login</a></li>
-          <li><a href="/wishlist">Wishlist</a></li>
+          <li><Link to="/wishlist">Cart</Link></li>
           <li><Link to="/cart">Cart</Link></li>
         </ul>
       </nav>
