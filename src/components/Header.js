@@ -21,8 +21,8 @@ const Header = () => {
               className="search-bar"
             />
           </li>
-          <li><a href="/login">Login</a></li>
-          <li><Link to="/wishlist">Cart</Link></li>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/wishlist">Wishlist</Link></li>
           <li><Link to="/cart">Cart</Link></li>
         </ul>
       </nav>

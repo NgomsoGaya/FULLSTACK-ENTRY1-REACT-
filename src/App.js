@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header'
 import Categories from './components/Categories';
 import Home from './pages/Home';
+import LoginPage from "./pages/LoginPage";
 import CartPage from './pages/CartPage';
 import WishlistPage from './pages/WishListPage';
 import WomanCategory from './pages/WomanCategory';
@@ -12,15 +13,17 @@ import ShoesCategory from './pages/ShoesCategory';
 import BagsCategory from './pages/BagsCategory';
 import BeautyCategory from './pages/BeautyCategory';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import { LoginProvider } from './contexts/LoginContext';
 
 const App = () => {
   return (
-    <Router>
+    <LoginProvider>
+      <Router>
       <Header />
       <Categories />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/wishlist" element={<WishlistPage />} />
         <Route path="/category/woman" element={<WomanCategory />} />
@@ -31,6 +34,7 @@ const App = () => {
         <Route path="/category/beauty" element={<BeautyCategory />} />
       </Routes>
     </Router>
+    </LoginProvider>
   );
 };
 
