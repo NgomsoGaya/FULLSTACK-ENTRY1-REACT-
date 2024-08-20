@@ -5,6 +5,9 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="home">
+    <div>
+      
+    </div>
       <section className="banner" id='Banner'>
         <h1 className="lobster-regular">Welcome to MyEcommerce</h1>
         <p>Shop the best products at the best prices</p>
