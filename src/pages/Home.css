@@ -2,6 +2,10 @@
 .home {
   padding: 20px;
 }
+#cleanZone{
+  padding: 10px;
+  margin: 10px;
+}
 
 .lobster-regular {
   font-family: "Lobster", sans-serif;
